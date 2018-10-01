@@ -30,7 +30,7 @@ export const UPDATE_USER_EMAIL = 'UPDATE_USER_EMAIL';
 //log out user
 export const LOGOUT_USER = 'LOGOUT_USER';
 
-
+/** à mon avis, http://localhost:3000 ne marche pas  */
 const ROOT_URL = location.href.indexOf('localhost') > 0 ? 'http://localhost:3000/api' : '/api';
 
 export function validateEmail(validateEmailToken) {
