@@ -80,7 +80,9 @@ export function resetToken() {//used for logout
 
 
 export function signUpUser(formValues) {
-  const request = axios.post(`${ROOT_URL}/user/create`, formValues);
+    debugger
+   //Remarque:  formValues = {username: "test", password: "test"}
+    const request = axios.post(`${ROOT_URL}/user/create`, formValues);
 
   return {
     type: SIGNUP_USER,
