@@ -57,23 +57,6 @@ export function validateEmailFailure(error) {
   };
 }
 
-/* export function meFromToken(tokenFromStorage) {
-  //check if the token is still valid, if so, get me from the server
-  const request = axios({
-    method: 'get',
-    url: `${ROOT_URL}/me/from/token?token=${tokenFromStorage}`,
-    headers: {
-      'Authorization': `Bearer ${tokenFromStorage}`
-    }
-  });
-
-  return {
-    type: ME_FROM_TOKEN,
-    payload: request
-  };
-}
-*/
-
 export function meFromTokenSuccess(currentUser) {
   return {
     type: ME_FROM_TOKEN_SUCCESS,
